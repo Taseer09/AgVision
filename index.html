@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgVision</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .navbar {
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    .bg-custom {
+      background-color: rgba(113, 124, 130, 0.58) !important;
+    }
+
+    .bg-custom {
+      background-color: rgba(113, 124, 130, 0.58) !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar fixed w-full z-10 bg-transparent transition-colors duration-500 ease-in-out">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <!-- Logo and Home Link -->
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <a href="#home">
+              <img class="h-32 w-auto" src="logo.png" alt="Your Company">
+            </a>
+          </div>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="hidden md:flex items-center space-x-4">
+          <a href="#about" id="about-link" class="navbar-link px-3 py-2 rounded-md text-sm font-medium">About</a>
+          <a href="#services" id="services-link"
+            class="navbar-link px-3 py-2 rounded-md text-sm font-medium">Services</a>
+          <a href="#team" id="team-link" class="navbar-link px-3 py-2 rounded-md text-sm font-medium">Team</a>
+          <a href="#contact" id="contact-link" class="navbar-link px-3 py-2 rounded-md text-sm font-medium">Contact
+            Us</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="mobile-menu-button"
+            class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#about" class="navbar-link block px-3 py-2 rounded-md text-base font-medium">About</a>
+        <a href="#services" class="navbar-link block px-3 py-2 rounded-md text-base font-medium">Services</a>
+        <a href="#team" class="navbar-link block px-3 py-2 rounded-md text-base font-medium">Team</a>
+        <a href="#contact" class="navbar-link block px-3 py-2 rounded-md text-base font-medium">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero relative">
+    <video autoplay loop muted class="w-full">
+      <source src="background-video.mp4" type="video/mp4">
+    </video>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center w-full text-white">
+      <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4">AgVision</h1>
+      <p class="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6">Shaping The Future of Agriculture</p>
+      <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-md text-lg sm:text-xl">Learn
+        More</button>
+    </div>
+  </section>
+
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col-reverse md:flex-row items-center justify-center md:justify-between py-16">
+        <!-- Content -->
+        <div class="md:w-1/2 md:pr-8">
+          <h2 class="text-3xl font-bold mb-4">About Us</h2>
+          <p class="mb-4">Welcome to AgVision, a pioneering organization dedicated to advancing artificial intelligence.
+            We believe in AI's potential to revolutionize industries, solve complex problems, and create new
+            possibilities for the futureAt AgVision, we are committed to revolutionizing agriculture through innovation
+            and technology. Our platform combines the power of AI, drone technology, and real-time voice assistance to
+            provide farmers with precise, actionable insights into their crop health. By addressing challenges such as
+            early disease detection and nutrient deficiencies, we empower farmers to make informed decisions that
+            improve productivity and sustainability.</p>
+
+          <h2 class="text-2xl font-bold mb-2">Our Vision</h2>
+          <p class="mb-4">To be the global leader in agricultural innovation, transforming farming practices with
+            AI-driven insights and technology, ensuring sustainable and efficient food production for generations to
+            come..</p>
+
+          <h2 class="text-2xl font-bold mb-2">Our Mission</h2>
+          <p class="mb-4">Our mission is to empower farmers with accessible, technology-driven solutions that simplify
+            crop management, improve yields, and reduce waste. We aim to promote sustainable farming practices by
+            providing real-time insights that help farmers make better decisions, optimize resources, and achieve
+            success in their agricultural endeavors.</p>
+        </div>
+
+        <!-- Image -->
+        <div class="md:w-1/2 md:pl-8">
+          <img class="w-full h-auto md:max-h-full" src="about-image.jpg" alt="About Image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Services Section -->
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="services-content">
+      <h2>Our Services</h2>
+      <ul>
+        <li>
+          <i class="fas fa-robot"></i>
+          <h3>Real-Time Voice Assistant</h3>
+          <p>Interact with your drone using simple voice commands such as "Scan this plant." Our real-time voice
+            assistant provides instant feedback on crop health, making it easier for farmers to manage their fields
+            without relying on complex devices or interfaces.</p>
+        </li>
+        <li>
+          <i class="fas fa-chart-line"></i>
+          <h3>AI-Powered Disease Detection</h3>
+          <p>Leverage the power of artificial intelligence to identify early signs of crop diseases. Our AI algorithms
+            analyze multispectral images to detect diseases like blight, rust, or pest infestations before they become
+            critical, enabling timely interventions.</p>
+        </li>
+        <li>
+          <i class="fas fa-lock"></i>
+          <h3>Nutrient Deficiency Analysis</h3>
+          <p>Ensure your crops get the right nutrients with our advanced multispectral imaging technology. AgVision
+            identifies areas of your field that are nutrient-deficient, offering recommendations for targeted
+            fertilization and soil management.</p>
+        </li>
+        <li>
+          <i class="fas fa-drone"></i>
+          <h3>Follow Me Drone Technology</h3>
+          <p>Let your drone do the hard work. AgVision's drones follow you through your field, automatically scanning
+            crops and collecting data while you focus on decision-making.</p>
+        </li>
+        <li>
+          <i class="fas fa-file-alt"></i>
+          <h3>Comprehensive Crop Health Report</h3>
+          <p>Receive detailed, easy-to-understand reports on your crop health. AgVision translates complex data into
+            actionable insights, helping you optimize inputs, reduce costs, and increase yields.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="team bg-gray-100 py-16">
+    <div class="flex justify-center items-center h-full">
+      <div class="container px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl sm:text-4xl font-bold mb-8 text-center">Meet Our Team</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Team Member 1 -->
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="team-member-1.jpg" alt="Team Member 1" class="w-full object-cover" style="height: 30rem;">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Taseer Mehboob</h3>
+              <p class="text-gray-600">Founder & CEO</p>
+            </div>
+          </div>
+
+          <!-- Team Member 2 -->
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="team-member-2.jpg" alt="Team Member 2" class="w-full object-cover" style="height: 30rem;">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Uzair Ullah</h3>
+              <p class="text-gray-600">Full Stack Web Developer</p>
+            </div>
+          </div>
+
+          <!-- Team Member 3 -->
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <img src="team-member-3.jpg" alt="Team Member 3" class="w-full object-cover" style="height: 30rem;">
+            <div class="p-4">
+              <h3 class="text-xl font-bold mb-2">Aizaz Ahmad</h3>
+              <p class="text-gray-600">Data Scientist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="contact-content">
+      <h2>Get in Touch</h2>
+      <p>Have a question, want to learn more about Us or want to Join Us? Contact us today!</p>
+      <form action="https://formsubmit.co/fe1493da4ff1d7f1e286b52b67d628f6" method="POST">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Message"></textarea>
+        <button>Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2023 AgVision. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+
+    // Event listener for scroll event
+    document.addEventListener('scroll', function () {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('bg-custom');
+      } else {
+        navbar.classList.remove('bg-custom');
+      }
+    });
+
+    // Event listener for mobile menu button click
+    document.getElementById('mobile-menu-button').addEventListener('click', function () {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+
+  </script>
+</body>
+
+</html>
